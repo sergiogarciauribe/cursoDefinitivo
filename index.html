@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Lista de supermercado</title>
 </head>
 <body>
     <header>
         <p>Desafio</p>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="#">Cursos</a></li>
+                <li class="main-nav__item"><a href="#">Instructores</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>Soy la lista del super!</h1>
+        <h1 class="headings">Soy la lista del super!</h1>
         <ul>
-            <li>Frutas</li>
+            <li class="producto">Frutas</li>
             <ol>
-                <li><a href="https://www.google.com/search?q=manzanas&ei=R-MpYrXPKPTOkPIPxouU0A4&ved=0ahUKEwj1jpHCurv2AhV0J0QIHcYFBeoQ4dUDCA4&uact=5&oq=manzanas&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUILhCABDIFCC4QgAQyBQgAEIAEMgUIABCABDIFCC4QgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAE6DwguENQCEMgDELADEEMYAToECAAQQzoOCC4QgAQQsQMQxwEQ0QM6CAgAEIAEELEDOggIABCxAxCDAToOCC4QgAQQsQMQgwEQ1AI6EQguEIAEELEDEMcBENEDENQCOgsILhCABBCxAxCDAToHCAAQsQMQQzoLCC4QgAQQxwEQowI6CwguELEDEIMBENQCOgsIABCABBCxAxCDAToQCC4QsQMQxwEQowIQ1AIQQzoKCC4QsQMQgwEQQzoECC4QQzoLCC4QgAQQsQMQ1AI6BwgAEIAEEAo6CAguEIAEENQCOgcILhCABBAKOgoILhCABBDUAhAKOgQIABAKOgoILhDHARCvARAKOgQIABANOgoILhDHARCvARANSgQIQRgASgQIRhgBUODiDljJ-Q5goosPaAlwAXgAgAHoAYgB7w6SAQYwLjExLjGYAQCgAQHIARPAAQHaAQYIABABGAnaAQYIARABGAg&sclient=gws-wiz" target="_blank">Manzanas</a></li>
-                <figure>
-                    <img src="./img/manzanas.jpg" alt="Manzanas">
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=manzanas&ei=R-MpYrXPKPTOkPIPxouU0A4&ved=0ahUKEwj1jpHCurv2AhV0J0QIHcYFBeoQ4dUDCA4&uact=5&oq=manzanas&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUILhCABDIFCC4QgAQyBQgAEIAEMgUIABCABDIFCC4QgAQyBQguEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAE6DwguENQCEMgDELADEEMYAToECAAQQzoOCC4QgAQQsQMQxwEQ0QM6CAgAEIAEELEDOggIABCxAxCDAToOCC4QgAQQsQMQgwEQ1AI6EQguEIAEELEDEMcBENEDENQCOgsILhCABBCxAxCDAToHCAAQsQMQQzoLCC4QgAQQxwEQowI6CwguELEDEIMBENQCOgsIABCABBCxAxCDAToQCC4QsQMQxwEQowIQ1AIQQzoKCC4QsQMQgwEQQzoECC4QQzoLCC4QgAQQsQMQ1AI6BwgAEIAEEAo6CAguEIAEENQCOgcILhCABBAKOgoILhCABBDUAhAKOgQIABAKOgoILhDHARCvARAKOgQIABANOgoILhDHARCvARANSgQIQRgASgQIRhgBUODiDljJ-Q5goosPaAlwAXgAgAHoAYgB7w6SAQYwLjExLjGYAQCgAQHIARPAAQHaAQYIABABGAnaAQYIARABGAg&sclient=gws-wiz" target="_blank">Manzanas</a></li>
+                <figure class="figure">
+                    <img class="imagen" src="./img/manzanas.jpg" alt="Manzanas">
                     <figcaption>
                         Son unas manzanas
                     </figcaption>
                 </figure>
-                <li><a href="https://www.google.com/search?q=Bananos&ei=QeQpYoWEIuPNkPIPr76ouAI&ved=0ahUKEwjFqKW5u7v2AhXjJkQIHS8fCicQ4dUDCA4&uact=5&oq=Bananos&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgQIABBDMgUILhCABDIFCAAQgAQyCwguEIAEEMcBEK8BMgUILhCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYADoPCC4Q1AIQyAMQsAMQQxgASgQIQRgASgQIRhgBUPMEWNcHYJwKaANwAXgAgAGnAYgBpwGSAQMwLjGYAQCgAQGgAQKwAQDIARHAAQHaAQYIABABGAg&sclient=gws-wiz" target="_blank">Bananos</a></li>
-                <figure>
-                    <img src="./img/bananos.jpg" alt="Bananos">
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=Bananos&ei=QeQpYoWEIuPNkPIPr76ouAI&ved=0ahUKEwjFqKW5u7v2AhXjJkQIHS8fCicQ4dUDCA4&uact=5&oq=Bananos&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgQIABBDMgUILhCABDIFCAAQgAQyCwguEIAEEMcBEK8BMgUILhCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6DAguEMgDELADEEMYADoPCC4Q1AIQyAMQsAMQQxgASgQIQRgASgQIRhgBUPMEWNcHYJwKaANwAXgAgAGnAYgBpwGSAQMwLjGYAQCgAQGgAQKwAQDIARHAAQHaAQYIABABGAg&sclient=gws-wiz" target="_blank">Bananos</a></li>
+                <figure class="figure">
+                    <img class="imagen" src="./img/bananos.jpg" alt="Bananos">
                     <figcaption>
                         Son unos bananos
                     </figcaption>
@@ -33,18 +44,18 @@
             </ol>
         </ul>
         <ul>
-            <li>Verduras</li>
+            <li class="producto">Verduras</li>
             <ol>
-                <li><a href="https://www.google.com/search?q=Papa+criolla&ei=cuQpYoaUKcnPkPIP2-mJkAI&ved=0ahUKEwiGldvQu7v2AhXJJ0QIHdt0AiIQ4dUDCA4&uact=5&oq=Papa+criolla&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOg8ILhDUAhDIAxCwAxBDGAE6EgguEMcBEKMCEMgDELADEEMYAUoECEEYAEoECEYYAVDWBFjaBmCJCGgDcAF4AIABjgGIAY4BkgEDMC4xmAEAoAEBoAECsAEAyAESwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz" target="_blank">Papa criolla</a></li>
-                <li><a href="https://www.google.com/search?q=Papa+parda&ei=MeUpYo3rJcrSkPIPuoWQyAc&ved=0ahUKEwjNx-GrvLv2AhVKKUQIHboCBHkQ4dUDCA4&uact=5&oq=Papa+parda&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAFKBAhBGABKBAhGGAFQxgpYiw1g5BdoBHABeACAAY0BiAGNAZIBAzAuMZgBAKABAaABArABAMgBEsABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz" target="_blank">Papa parda</a></li>
-                <li><a href="https://www.google.com/search?q=zucchini&ei=SOUpYv2yF4KfkPIPpr-B-A0&ved=0ahUKEwj99s62vLv2AhWCD0QIHaZfAN8Q4dUDCA4&uact=5&oq=zucchini&gs_lcp=Cgdnd3Mtd2l6EAMyBwguELEDEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAA6DAguEMgDELADEEMYAUoECEEYAEoECEYYAVD-CFivC2DPDWgEcAF4AIABnQGIAZ0BkgEDMC4xmAEAoAEBoAECsAEAyAETwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz"target="_blank">zucchini</a></li>
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=Papa+criolla&ei=cuQpYoaUKcnPkPIP2-mJkAI&ved=0ahUKEwiGldvQu7v2AhXJJ0QIHdt0AiIQ4dUDCA4&uact=5&oq=Papa+criolla&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOg8ILhDUAhDIAxCwAxBDGAE6EgguEMcBEKMCEMgDELADEEMYAUoECEEYAEoECEYYAVDWBFjaBmCJCGgDcAF4AIABjgGIAY4BkgEDMC4xmAEAoAEBoAECsAEAyAESwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz" target="_blank">Papa criolla</a></li>
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=Papa+parda&ei=MeUpYo3rJcrSkPIPuoWQyAc&ved=0ahUKEwjNx-GrvLv2AhVKKUQIHboCBHkQ4dUDCA4&uact=5&oq=Papa+parda&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAFKBAhBGABKBAhGGAFQxgpYiw1g5BdoBHABeACAAY0BiAGNAZIBAzAuMZgBAKABAaABArABAMgBEsABAdoBBggAEAEYCdoBBggBEAEYCA&sclient=gws-wiz" target="_blank">Papa parda</a></li>
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=zucchini&ei=SOUpYv2yF4KfkPIPpr-B-A0&ved=0ahUKEwj99s62vLv2AhWCD0QIHaZfAN8Q4dUDCA4&uact=5&oq=zucchini&gs_lcp=Cgdnd3Mtd2l6EAMyBwguELEDEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAEEcQsAM6BwgAELADEEM6CggAEOQCELADGAA6DAguEMgDELADEEMYAUoECEEYAEoECEYYAVD-CFivC2DPDWgEcAF4AIABnQGIAZ0BkgEDMC4xmAEAoAEBoAECsAEAyAETwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz"target="_blank">zucchini</a></li>
             </ol>
         </ul>
         <ul>
-            <li>Carnes</li>
+            <li class="producto">Carnes</li>
             <ol>
-                <li><a href="https://www.google.com/search?q=Pechuga+de+pollo&ei=o-UpYtTPGLPKkPIPgLiGmAo&ved=0ahUKEwiUrYLivLv2AhUzJUQIHQCcAaMQ4dUDCA4&uact=5&oq=Pechuga+de+pollo&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAE6DwguENQCEMgDELADEEMYAUoECEEYAEoECEYYAVCLBViVB2DKEGgDcAF4AIABlgGIAZYBkgEDMC4xmAEAoAEBoAECsAEAyAETwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz"target="_blank">Pechuga de pollo</a></li>
-                <li><a href="https://www.google.com/search?q=Filete+de+Pescado&ei=CuYpYuXCOdzQkPIPyvmfsAE&ved=0ahUKEwjl77GTvbv2AhVcKEQIHcr8BxYQ4dUDCA4&uact=5&oq=Filete+de+Pezcado&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQAFgAYLYOaABwAngAgAEAiAEAkgEAmAEAyAEIwAEB&sclient=gws-wiz"target="_blank">Filete de pescado</a></li>
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=Pechuga+de+pollo&ei=o-UpYtTPGLPKkPIPgLiGmAo&ved=0ahUKEwiUrYLivLv2AhUzJUQIHQCcAaMQ4dUDCA4&uact=5&oq=Pechuga+de+pollo&gs_lcp=Cgdnd3Mtd2l6EAMyCAguEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgAOgwILhDIAxCwAxBDGAE6DwguENQCEMgDELADEEMYAUoECEEYAEoECEYYAVCLBViVB2DKEGgDcAF4AIABlgGIAZYBkgEDMC4xmAEAoAEBoAECsAEAyAETwAEB2gEGCAAQARgJ2gEGCAEQARgI&sclient=gws-wiz"target="_blank">Pechuga de pollo</a></li>
+                <li class="item"><a class="item_link boton" href="https://www.google.com/search?q=Filete+de+Pescado&ei=CuYpYuXCOdzQkPIPyvmfsAE&ved=0ahUKEwjl77GTvbv2AhVcKEQIHcr8BxYQ4dUDCA4&uact=5&oq=Filete+de+Pezcado&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEcyBAgAEEdKBAhBGABKBAhGGABQAFgAYLYOaABwAngAgAEAiAEAkgEAmAEAyAEIwAEB&sclient=gws-wiz"target="_blank">Filete de pescado</a></li>
             </ol>
         </ul>
         <video controls preload="auto">

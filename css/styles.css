@@ -1,0 +1,63 @@
+:root{
+
+     --primario: #581845;
+     --blanco: #ffffff;
+     --botones: #FF5733;
+
+}
+
+/*Hack Rems*/
+html{
+    font-size: 62.25%;
+}
+
+body{
+    background-color: var(--primario);
+}
+p{
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+    color: var(--blanco);
+    pointer-events: all;
+}
+
+.headings{
+    color: var(--blanco);
+    font-size: 5rem;
+    text-align: center;
+}
+/*header*/
+.main-nav{
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+    font-size: 2.5rem;
+}
+.producto, .item{
+    color: var(--blanco);
+    margin: 2rem 0;
+}
+.item{
+    font-size: 2rem;
+}
+.producto{
+    font-size: 3rem;
+    
+}
+.item_link{
+    font-size: 2rem;
+}
+.boton{
+    background-color: var(--botones);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.imagen{
+    border-radius: 20rem;
+    max-width: auto;
+}
+.figure{
+    color: var(--blanco);
+}
