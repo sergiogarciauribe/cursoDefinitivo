@@ -34,6 +34,24 @@ a{
     padding-left: 0;
     list-style: none;
     font-size: 2.5rem;
+    background-color: #13a4a4;
+    padding: 1rem;
+}
+.main-nav__item {
+    display: inline-block;
+}
+.main-nav__item a {
+    padding: 1rem;
+}
+    
+.main-nav__item a:hover {
+    background-color: #222;
+}
+.main-nav__item a:active {
+    color: red;
+}
+.main-nav__item a::after{
+    content: "|";
 }
 .producto, .item{
     color: var(--blanco);
