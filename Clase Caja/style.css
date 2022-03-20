@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+
+ padding: 0 20px;
+ border-color: #222;
+ border: solid 10px;
+}
